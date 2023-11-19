@@ -83,29 +83,13 @@ form {
     flex-wrap: wrap;
   }
 
-  .ps-a {
-    position: absolute;
-  }
-
-  .ps-a-c {
-    left: 50%; transform: translateX(-50%);
-  }
-
-  .w-st {
-    width: 100% !important;
-  }
-
-  .h-st {
-    height: 100% !important;
-  }
-
-  .bs-s {
-    border-style: solid;
-  }
-
-  .w-fill {
-    width: 100% !important;
-  }
+  .ps-a{position: absolute}
+  .ps-a-c { left: 50%; transform: translateX(-50%)}
+  .w-st { width: 100% !important}
+  .h-st {height: 100% !important}
+  .bs-s {border-style: solid}
+  .w-fill {width: 100% !important}
+  
   
   @media (max-width: 1190px) {
 
@@ -128,7 +112,7 @@ form {
     .t_w-fill {
       width: 100% !important;
     }
-
+    .gr-2-1 { display: grid; grid-template-columns: repeat(2, 1fr)}
     
   }
   
@@ -153,6 +137,7 @@ form {
     .m_w-fill {
       width: 100% !important;
     }
+    .gr-2-1 {grid-template-columns: repeat(1, 1fr)}
   }
 
   .g_w-fl {
@@ -232,6 +217,13 @@ form {
     letter-spacing: 0.005em;
     line-height: 140%;
     }
+  .h2 { 
+    font-family: Satoshi Variable;
+    font-size: calc(16px + (40px - 16px) * var(--m1));;
+    font-weight: 700;
+    letter-spacing: 0em;
+    line-height: 120%;
+    }
   @media (max-width: 1190px) {
 }
 @media (max-width: 720px) {
@@ -262,6 +254,10 @@ form {
 .ai-c { align-items: center ; }
 .mxw-1224 { max-width: 1224px; }
 .g-130 { gap: calc(130px * var(--m1)) ; }
+.h-410_m3 { height: calc(410px * var(--m3)) ; }
+.w-530_m3 { width: calc(530px * var(--m3)) ; }
+.r--143_m3 { right: calc(-143px * var(--m3)) ; }
+.t--45_m3 { top: calc(-45px * var(--m3)) ; }
 .c-0-0-0 { color: rgb(0, 0, 0); }
 .o-0 { opacity: 0 ; }
 .h-24 { height: calc(24px * var(--m1)) ; }
@@ -278,6 +274,7 @@ form {
 .ta-c { text-align: center ; }
 .c-255-255-255 { color: rgb(255, 255, 255); }
 .bg-242-242-242 { background-color: rgb(242, 242, 242); }
+.ta-r { text-align: right ; }
 .c-5-5-5 { color: rgb(5, 5, 5); }
 .bg-217-217-217 { background-color: rgb(217, 217, 217); }
 .br-40 { border-radius: calc(40px * var(--m1)) ; }
@@ -295,9 +292,18 @@ form {
 .fw-900 { font-weight: 900 ; }
 .lh-140 { line-height: 140%; }
 .mxw-270 { max-width: 270px; }
+.g-106 { gap: calc(106px * var(--m1)) ; }
+.h-490 { height: calc(490px * var(--m1)) ; }
+.g-8 { gap: calc(8px * var(--m1)) ; }
+.fs-16 { font-size: 16px; }
+.fw-700 { font-weight: 700 ; }
+.lh-162 { line-height: 162%; }
+.w-20_m0 { width: calc(20px * var(--m0)) ; }
+.h-20_m0 { height: calc(20px * var(--m0)) ; }
 @media(max-width: 1190px) {
 .t_g-40 { gap: 40px; }
   }
 @media(max-width: 720px) {
 .m_g-24 { gap: 24px; }
+  .m_g-32 { gap: 32px; }
   }
